@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up-form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="assets/qingbao-meng-01_igFr7hd4-unsplash.jpg"
+                alt="A birds eye picture displaying rolling green hills with sheep" class="background">
+            <div class="logo">
+                <img src="assets/odin-lined.png" alt="An image of the allfather (Odin)" class="odin">
+                <span>Odin</span>
+            </div>
+            <footer>Photo by <a href="https://unsplash.com/@ideasboom">qingbao-meng</a> on <a
+                    href="https://unsplash.com/">unsplash</a></footer>
+        </div>
+        <div class="right-side">
+            <div class="quote">
+                <div class="paras">
+                    <p>This is not a real online service! You know you need something like this in your life to help
+                        realize your
+                        deepest dreams. Sign up <em>now</em> to get started. </p>
+                    <p>You <em>know</em> you want to.</p>
+                </div>
+            </div>
+            <div class="details">
+                <form action="#" method="post"></form>
+                <p>Let's do this!</p>
+                <div class="inputs">
+                    <div class="pair">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="pair">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="pair">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="pair">
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="tel" id="number" name="number" required pattern="
+                            ^(44|0)\d{10}$">
+                    </div>
+                    <div class="pair">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" pattern="(Boaby123)" required>
+                    </div>
+                    <div class="pair">
+                        <label for="password">CONFIRM PASSWORD</label>
+                        <input type="password" id="password" name="password" required pattern="(Boaby123)">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="submit">
+                <button>Create Account</button>
+                <p>Already have an account? Log in</p>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
