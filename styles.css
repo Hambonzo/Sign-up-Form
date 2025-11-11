@@ -4,10 +4,15 @@
         url("assets/fonts/raleway-regular-webfont.woff");
 }
 
+:root {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
     margin: 0;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.856);
+    
 
     
 }
@@ -16,12 +21,14 @@ body {
     display: flex;
     min-height: 100vh;
     background: white;
+    margin: 0;
+    border: 0;
     
 }
 
 .left-side {
     position: relative;
-    width: 40%;
+    width: 30%;
 }
 
 
@@ -40,14 +47,13 @@ body {
     width: 100%;
     display: flex;
     opacity: 0.5;
-    padding: 10px;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    height: 20vh;
+    height: 18vh;
     color: white;
     text-align: center;
-    font-size: clamp(1.5rem, 4vh, 3rem);
+    font-size: 7rem;
     letter-spacing: 0.05em;
     font-family: "raleway", sans-serif;
     
@@ -67,7 +73,7 @@ footer {
     position: absolute;
     bottom: 2%;
     left: 50%;
-    font-size: clamp(1.1rem, 0.8vw, 1.2rem);
+    font-size: clamp(1.1rem, 0.5vw, 1.2rem);
     transform: translateX(-50%);
     
 
@@ -82,40 +88,38 @@ footer {
     display: flex;
     flex-direction: column;
     flex: 1;
+    width: 70%;
 }
 
-.right-side div {
-    width:1179.5px;
-    box-sizing: content-box;
+.quote, .details, .submit {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 100px;
 }
 
 
 .quote {
-    flex: 35;
-    min-height: 150px;
+    height: 35vh;
     font-size: xx-large;
     display: flex;
+    align-items: center;
     background-color: rgb(241, 240, 240);
-    justify-content: center;
-    align-items: flex-end;
-    font-weight: 540;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    box-sizing: content-box;
+
+    
+    
     
 }
 
 .quote * p { 
-    max-width: 50ch;
-    padding-left: 20px;
+    max-width: 55ch;
     padding-bottom: 10px;
 }
 
 
 
 .details {
-    flex: 30;
-    min-height: 100px;
-    padding-left: 120px;
+    height: auto;
+    min-height: 30vh;
     box-shadow:
      0 -4px 1rem -7px rgba(85, 85, 85, 0.856),
      0 4px 1rem -7px rgba(85, 85, 85, 0.856);   
@@ -128,6 +132,11 @@ footer {
 
 .inputs {
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 25rem;
+    row-gap: 2.8rem;
+    max-width: 70rem;
+    font-size: 0.9rem;
     
 }
 
@@ -137,17 +146,18 @@ footer {
 }
 
 
-.details * label {
-    font-size:smaller;
-}
+
 
 .details * input {
-    width: 300px;
+    min-width: 20rem;
+    width: 100%;
+    max-width: 300px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid #E5E7EB;
     outline: none;
     margin: 0;
+    font-size: 0.9rem;
 }
 
 .details input:focus {
@@ -161,9 +171,31 @@ footer {
 
 
 .submit {
-    flex: 35;
-    min-height: 150px;
+    height: 35vh;
+    padding-top: 40px;
+    font-size: large;
+    
+    
 }
+
+.submit > button {
+    width: 14rem;
+    height: 3.2rem;
+    border-radius: 10px;
+    border: 0;
+    background-color:#596D48;
+    color: #E5E7EB;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    
+}
+
+.submit * a {
+    text-decoration: none;
+    color: #596D48;
+}
+
 
 
 
